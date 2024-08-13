@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <title>AppLand Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+  <section class="header">
+    <header>
+      <div class="container ">
+        <div class="navbar flex1">
+          <div class="logo">
+            <img src="image/logo.png" alt="">
+          </div>
+
+          <nav>
+            <!-- <ul id="menuitem">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#Overview">Overview</a></li>
+              <li><a href="#function">Functionalities</a></li>
+              <li><a href="#Features">Features</a></li>
+              <li><a href="#dowload">Download</a></li>
+              <li><a href="#team">Team</a></li>
+              <li><a href="">Contact</a></li>
+            </ul>
+            <button>Get Started</button> -->
+          </nav>
+          <span class="fa fa-bars" onclick="menutoggle()"></span>
+        </div>
+      </div>
+    </header>
+  </section>
+
+  <script>
+    var menuitem = document.getElementById("menuitem");
+    menuitem.style.maxHeight = "0px";
+
+    function menutoggle() {
+      if (menuitem.style.maxHeight == '0px') {
+        menuitem.style.maxHeight = "500px"
+      } else {
+        menuitem.style.maxHeight = "0px"
+      }
+    }
+
+    window.addEventListener("scroll", function() {
+      var header = document.querySelector("header");
+      header.classList.toggle("sticky", window.scrollY > 50);
+    })
+  </script>
+
+  <section class="home" id="home">
+    <div class="container flex1">
+      <div class="left">
+        <h1>Get eyes on properties more often, <br>
+          with less overhead</h1>
+        <p>The Top Property Inspection Solution for Property Managers, Contractors, Rental & Real Estate Agents and Tenants.</p>
+
+        <div class="button flex">
+        
+          <div class="store-buttons" data-aos="fade-up">
+            <a  href="#" class="store-button google-play">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+            </a>
+          <!-- apple button -->
+          <a href="#" class="store-button google-play">
+            <img src="./image/apple.png" alt="Get it on Apple Play">
+        </a>
+        </div>
+    
+        </div>
+      </div>
+      <div class="right">
+        <div class="img">
+          <img src="image/home.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  
+
+
+  <section class="function  top" id="function">
+    <div class="container">
+      <div class="heading">
+        <h1>What is Propkey360 Inspector?</h1>
+        <!-- <p>Enhance Your Brand Potential With Giant Advertising Blimps</p> -->
+      </div>
+
+      <div class="fun_content">
+        <div class="content flex mtop">
+          <div class="left">
+            <i class="fad fa-chart-bar"></i>
+            <h3>Save money on inspections</h3>
+            <p>the most well-rounded, collaborative field-to-office property inspection solution for the property management, real estate, and construction trades.
+              Your Propkey360 Inspector mobile app inspection findings—photos, videos, and inspection reports and documents—become automatically available to your entire team via smartphone, tablet, and computer, with everything available, searchable, organized, and backed-up.
+              
+              This powerful inspection capability is complemented by a robust and evolving set of property and task management tools to offer the most comprehensive, assistive, and customizable property management toolkit on the market.</p>
+            <!-- <a href="#">Learn More</a> -->
+          </div>
+          <div class="right" data-aos="fade-left">
+            <div class="img">
+              <img src="image/f1.jpg" alt="">
+            </div>
+          </div>
+        </div>
+        <!-- <div class="content flex mtop">
+          <div class="left">
+            <i class="fad fa-print-search"></i>
+            <h3>Promotional Advertising Specialty You Ve Waited Long Enough</h3>
+            <p>Ever wondered how some graphic designers always manage to produce beautiful looking designs for their brochures, website designs, logo designs? Talent…yes, it helps but there are a hand- ful of more important things you can do that
+              will
+              have even complete beginners producing award winning design.</p>
+            <a href="#">Learn More</a>
+          </div>
+          <div class="right">
+            <div class="img">
+              <img src="image/f3.png" alt="">
+            </div>
+          </div>
+        </div> -->
+        <!-- <div class="content flex mtop">
+          <div class="left">
+            <i class="fas fa-rocket"></i>
+            <h3>Promotional Advertising Specialty You Ve Waited Long Enough</h3>
+            <p>Ever wondered how some graphic designers always manage to produce beautiful looking designs for their brochures, website designs, logo designs? Talent…yes, it helps but there are a hand- ful of more important things you can do that
+              will
+              have even complete beginners producing award winning design.</p>
+            <a href="#">Learn More</a>
+          </div>
+          <div class="right">
+            <div class="img">
+              <img src="image/f5.png" alt="">
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </div>
+  </section>
+<!-- over view -->
+<section class="Overview mtop" id="Overview">
+  <br><br><br>
+  <div class="container">
+    <!-- <div class="heading">
+      <h1>App Overview</h1>
+      <p>Enhance Your Brand Potential With Giant Advertising Blimps</p>
+    </div> -->
+
+    <div class="content grid mtop">
+      <div class="box to-center">
+        <div data-aos="fade-left" class="imag">
+          <img src="image/1.png" alt="">
+          <!-- <i class="fas fa-download"></i> -->
+        </div>
+        <div data-aos="fade-up" class="text">
+          <h3>Best In-App Camera Experience</h3>
+          <p>When you open the Propkey360 Inspector 3 app on your tablet or smartphone, you are really stepping into the best, fastest, and most flexible in-app inspection camera experience there is.</p>
+        </div>
+      </div>
+      <div class="box to-center">
+        <div data-aos="fade-left" class="imag">
+          <img src="image/2.png" alt="">
+          <!-- <i class="fas fa-edit"></i> -->
+        </div>
+        <div data-aos="fade-up" class="text">
+          <h3>iOS & Android Compatible</h3>
+          <p>Propkey360 Inspector 3 is compatible with most contemporary iOS and Android smartphones and tablets. Smart features and settings allow you to focus on the task at hand while inspection data upload and device storage management happens quietly in the background.</p>
+        </div>
+      </div>
+      <div class="box to-center">
+        <div data-aos="fade-left" class="imag">
+          <img src="image/3.png" alt="">
+          <!-- <i class="fas fa-chart-line"></i> -->
+        </div>
+        <div data-aos="fade-up" class="text">
+          <h3>Beautiful, Printable Inspection Reports</h3>
+          <p>Each inspection you submit in the Propkey360 Inspector 3 app results in a polished and professional report—perfect for sharing digitally or as a readable printed document.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  <section class="Features mtop" id="Features">
+    <div class="container">
+      <div class="heading">
+        <h1>Transform your business</h1>
+        <p>Enhance Your Brand Potential With Giant Advertising Blimps </p>
+      </div>
+
+      <div class="content flex mtop">
+        <div class="left newgrid">
+          <div data-aos="fade-right" class="box">
+            <div class="img">
+              <i class="far fa-phone"></i>
+            </div>
+            <ul class="list-new">
+              <li>Leverage the smartest inspection app on the market.</li>
+              <li>Customize everything to suit your brand and your business process.</li>
+              <li>Inspect consistently to capture a crystal-clear understanding of real property conditions as they change over time.</li>
+            </ul>
+      
+          </div>
+          <div data-aos="fade-left" class="box">
+            <div class="img">
+              <i class="fas  fa-key"></i>
+            </div>
+            <ul class="list-new">
+              <li>Integrate with your property accounting software—Rentec Direct, Rent Manager, AppFolio, or Propertyware—to get up to speed instantly and keep pace with your changing portfolio.
+              </li>
+                <li>Eliminate paperwork and avoid hassle with powerful one-touch report generation capabilities to PDF, Evernote, Dropbox, and Google Drive.
+                </li>
+                
+               
+              <li>Increase organization, efficiency, and productivity to the max.</li>
+            
+Collaborate seamlessly with your entire team, on a fully transparent or need-to-know basis, with a group account.
+Access a growing selection of info views to facilitate clear, focused, and accurate communication about real estate properties.
+            </ul>
+          </div>
+          <div data-aos="fade-right" class="box">
+            <div class="img">
+              <i class="fas fa-rocket"></i>
+            </div>
+            <ul class="list-new">
+           
+                <li>Collaborate seamlessly with your entire team, on a fully transparent or need-to-know basis, with a group account.
+                </li>
+                
+               
+              <li>Access a growing selection of info views to facilitate clear, focused, and accurate communication about real estate properties..</li>
+            
+
+
+            </ul>
+          </div>
+          <div data-aos="fade-left" class="box">
+            <div class="img">
+              <i class="fas fa-user"></i>
+            </div>
+            <ul class="list-new">
+           
+              <li>Mobilize your customer experience portal with a convenient and unified custom app, which you can build and brand in minutes.
+              </li>
+              
+             
+            <li>
+              Eliminate disruption with contactless virtual tours, tenant-completed inspections, and remote signing.
+              </li>
+          
+
+
+          </ul>
+          </div>
+        </div>
+        <div data-aos="zoom-in" class="newright">
+          <div class="image">
+            <img src="image/fe.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <section class="team top" id="team">
+    <div class="container">
+      <div class="heading">
+        <h1>Trusted By Great Team</h1>
+        <p>Enhance Your Brand Potential With Giant Advertising Blimps</p>
+      </div>
+
+      <div class="content grid mtop">
+        <div class="box">
+          <img src="image/1t.png" alt="">
+        </div>
+        <div class="box">
+          <img src="image/2t.png" alt="">
+        </div>
+        <div class="box">
+          <img src="image/3t.png" alt="">
+        </div>
+        <div class="box">
+          <img src="image/4t.jpeg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- download -->
+   <div class="space"></div>
+  <section class="dowload" id="dowload">
+    <div class="container flex">
+      <div class="left">
+        <h1>Ready to get started?</h1>
+        <p>Sign up now, and start inspecting within minutes.</p>
+
+        <div class="flex">
+          <div class="box flex">
+            <div class="button flex">
+        
+              <div class="store-buttons">
+                <a href="#" class="store-button google-play">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+                </a>
+              <!-- apple button -->
+              <a href="#" class="store-button google-play">
+                <img src="./image/apple.png" alt="Get it on Apple Play">
+            </a>
+            </div>
+          </div>
+          <!-- <div class="box flex">
+            <div class="img">
+              <i class="fab fa-android"></i>
+            </div>
+            <div class="text">
+              <span>Download on the</span>
+              <h2>Google Play </h2>
+            </div> -->
+          </div> 
+        </div>
+      </div>
+      <div class="right">
+        <img src="image/d1.png" alt="">
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="container grid footer">
+      <!-- <div class="box"> -->
+        <!-- <img src="image/logo2.png" alt=""> -->
+        <p>Copyright 2024 Scaled Tech Inc. (Propkey360 Inspector) | All Rights Reserved </p>
+
+        <div class="social">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-youtube"></i>
+        </div>
+      <!-- </div> -->
+
+      <!-- <div class="box">
+        <h3>Post Tags</h3>
+        <button>App</button>
+        <button>Business</button>
+        <button>Corporate</button>
+        <button>Creative</button>
+        <button>Design</button>
+        <button>Fasion</button>
+        <button>Food</button>
+        <button>Mobile</button>
+        <button>Music</button>
+        <button>Travel</button>
+      </div> -->
+<!-- 
+      <div class="box">
+        <h3>Blog Categories</h3>
+        <ul>
+          <li>App Review</li>
+          <li>Audio Post</li>
+          <li>Default Post</li>
+          <li>Uncategorized</li>
+          <li>Video Post</li>
+          <li>Website Review</li>
+        </ul>
+      </div>
+
+      <div class="box">
+        <h3>Contact Info</h3>
+        <ul>
+          <li><i class="fas fa-map-marker-alt"></i> Location</li>
+          <li><i class="fas fa-mobile-alt"></i> +977 9813253082</li>
+          <li><i class="far fa-envelope"></i> example@gmail.com</li>
+        </ul>
+      </div> -->
+    </div>
+  </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
