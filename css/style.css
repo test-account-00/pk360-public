@@ -246,16 +246,16 @@ header.sticky li a {
 /* ----------button setup of apple and play store ------ */
 .store-buttons {
   display: flex;
+  justify-content: center;
+  width: 100%;
   gap: 20px;
 }
 
 .store-button {
   display: block;
   max-width: 220px;
-  width: 100%;
-  height: 60px;
+  width: 250px;
   transition: transform 0.3s ease;
-  background-color: #000;
   color: black;
   border-radius: 10px;
 }
@@ -263,8 +263,8 @@ header.sticky li a {
 .store-button img {
   width: 100%;
   height: 100%;
-  display: block;
-  object-fit: cover;
+  /* display: block; */
+  object-fit: contain;
 }
 
 
@@ -272,10 +272,14 @@ header.sticky li a {
   .store-buttons {
       flex-direction: column;
       align-items: center;
+      justify-content: center;
+      height: 200px;
   }
 
-  .store-button {
-      max-width: 80%;
+  .store-button:nth-child(2) {
+  margin-top: -50px;
+      /* max-width: 80%; */
+      /* height: 200px; */
   }
 }
 /*----------home---------*/
