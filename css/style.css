@@ -17,6 +17,7 @@ body {
   scroll-behavior: smooth;
   color: black;
   background-color: rgb(189, 255, 189);
+  overflow-x: hidden;
 }
 
 /*---------global------*/
@@ -189,12 +190,12 @@ header.sticky li a {
   header nav ul li a {
     color: black;
   }
-
+/* 
   header .navbar span {
     color: white;
     display: block;
     cursor: pointer;
-  }
+  } */
 
   header button {
     display: none;
@@ -311,7 +312,7 @@ header.sticky li a {
   background: white;
   box-shadow: 0 20px 51px 9px rgb(0 0 0 / 8%);
   border-radius: 5px;
-  padding: 100px;
+  padding: 30px;
 }
 
 .heading h1 {
@@ -642,9 +643,7 @@ footer ul li {
 }
 
 @media only screen and (max-width:412px) {
-  .function {
-    margin-top: 220%;
-  }
+
 
   .dowload img,
   .Features img,
