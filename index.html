@@ -10,7 +10,7 @@
 
 </head>
 
-<body>
+<body onload="passwordPrompt()">
   <section class="header">
     <header>
       <div class="container ">
@@ -53,6 +53,14 @@
       var header = document.querySelector("header");
       header.classList.toggle("sticky", window.scrollY > 50);
     })
+ function passwordPrompt() {
+      var password = prompt("Please enter the password to access this site:");
+      if (password !== "yourPassword") {
+        alert("Incorrect password. Access denied.");
+        window.location.href = "about:blank";
+      }
+    }
+    
   </script>
 
   <section class="home" id="home">
